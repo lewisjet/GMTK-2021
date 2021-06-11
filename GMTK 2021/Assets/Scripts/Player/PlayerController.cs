@@ -5,37 +5,36 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    private const string HORIZONTALID = "Horizontal";
-    private const string JUMPID = "Jump";
+    private float MovX;
+    private float MovY;
+    public float MoveSpeed;
+    public float JumpForce;
+    public bool Jumping;
 
-    [SerializeField] private float _movementSpeed = 1;
-    [SerializeField] private float _jumpHeight = 1;
-    [SerializeField] private Feet feet;
+    private Rigidbody2D RG2D;
 
-    private Rigidbody2D _rigidbody;
-
-    //Unity controlled function
-    private void Awake() 
+    private void Start()
     {
+        RG2D = GetComponent<Rigidbody2D>();
+    }
+
+    private void Update()
+    {
+        MovX = Input.GetAxisRaw("Horizontal");
+        MovY = Input.GetAxisRaw("Vertical");
+
+        if(MovX != 0) RG2D.velocity = new Vector2(MovX * MoveSpeed, RG2D.velocity.y);
+        else if(MovX == 0) RG2D.velocity = new Vector2(RG2D.velocity.x / 2, RG2D.velocity.y);
         
-        _rigidbody = GetComponent<Rigidbody2D>();
+        if(MovY == 1 && !Jumping)
+        {
+            RG2D.velocity = new Vector2(RG2D.velocity.x, JumpForce);
+            Jumping = true;
+        }
     }
 
-
-    //Unity controlled function
-    private void Update() 
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        Move();
-        
+        Jumping = false;
     }
-
-    private void Move()
-    {
-        if(Input.GetAxis(HORIZONTALID) > Mathf.Epsilon) { TranslatePlayer(new Vector2(1,0)); }
-        if(Input.GetAxis(HORIZONTALID) < 0) { TranslatePlayer(new Vector2(-1,0)); }
-       // if(Input.GetButtonUp(HORIZONTALID)) { _rigidbody.velocity = new Vector2(0,_rigidbody.velocity.y); }
-        if(Input.GetButtonDown(JUMPID) && feet.CollidingOnGround) { transform.position += new Vector3(0,1f,0); TranslatePlayer(new Vector2(0,_jumpHeight)); }
-    }
-
-    private void TranslatePlayer(Vector2 amount)  =>  _rigidbody.velocity += amount * Time.deltaTime * _movementSpeed;
 }
