@@ -50,7 +50,10 @@ MonoBehaviour:
   - id: malfunction
     lineOfText: Oh no! The large hardron collider is malfuntioning!
   - id: links
-    lineOfText: 'And it''s '
+    lineOfText: To make it worse, all of my collegues have been... linked together.
+  - id: call to action
+    lineOfText: They're bound to eat me out of revenge, so I better find a way to
+      escape...
 --- !u!1 &1884201791124712915
 GameObject:
   m_ObjectHideFlags: 0
