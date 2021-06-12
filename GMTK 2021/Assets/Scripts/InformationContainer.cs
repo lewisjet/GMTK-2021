@@ -6,7 +6,8 @@ using UnityEngine;
 public class InformationContainer : ScriptableObject
 {
     public float hp = 100f;
-    public List<Upgrade> unlockedUpgrades;
+    public float jumpHeight = 10.5f;
+    public List<Upgrade> unlockedUpgrades = new List<Upgrade>();
 
     public int doorId = -1;
 

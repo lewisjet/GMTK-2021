@@ -5,14 +5,16 @@ using UnityEngine;
 public class DamageDealingModule : MonoBehaviour
 {
     [SerializeField] float _damageDealt;
-
-    private void OnTriggerEnter2D(Collider2D other) {
+    [SerializeField] bool _destroyOnImpact;
+    private void OnCollisionEnter2D(Collision2D other) {
         
 
-        var hp = other.GetComponent<HealthComponent>();
-        if(!hp || other.isTrigger){ return; }
+        var hp = other.gameObject.GetComponent<HealthComponent>();
+        if(!hp){ return; }
 
-        hp.Health -= _damageDealt;
+        hp.Health = hp.Health - _damageDealt;
+
+        if(_destroyOnImpact){ Destroy(gameObject); }
 
     }
 }

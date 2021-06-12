@@ -4,7 +4,7 @@ using UnityEngine;
 
 public abstract class Upgrade
 {
-    public virtual void OnPickup(){}
+    public virtual void OnPickup(InformationContainer ic){}
     public virtual void Invoke(){}
 }
 
@@ -12,4 +12,10 @@ public abstract class Upgrade
 public class Metal1 : Upgrade {}
 public class Metal2 : Upgrade {}
 public class Metal3 : Upgrade {}
-public class Metal4 : Upgrade {}
+public class HighJump : Upgrade 
+{
+    public override void OnPickup(InformationContainer ic)
+    {
+        ic.jumpHeight += 5f;
+    }
+}

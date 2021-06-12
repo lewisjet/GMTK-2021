@@ -267,9 +267,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MoveSpeed: 5
-  JumpForce: 10.5
   Jumping: 0
   _spriteRenderer: {fileID: 4303445628267981073}
+  container: {fileID: 11400000, guid: 225b9d90ef0792746af567802bdbb7b2, type: 2}
 --- !u!114 &6914618446375736019
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -283,6 +283,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _damageDealt: 1
+  _destroyOnImpact: 0
 --- !u!1001 &7800906487528761963
 PrefabInstance:
   m_ObjectHideFlags: 0

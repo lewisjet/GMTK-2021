@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: Info
   m_EditorClassIdentifier: 
   hp: 100
+  doorId: -1

@@ -8,12 +8,12 @@ public class PlayerController : MonoBehaviour
     private float MovX;
     private float MovY;
     public float MoveSpeed;
-    public float JumpForce;
     public bool Jumping;
 
     private Rigidbody2D RG2D;
 
     [SerializeField] private SpriteRenderer _spriteRenderer;
+    public InformationContainer container;
 
     private void Start()
     {
@@ -31,9 +31,9 @@ public class PlayerController : MonoBehaviour
               }
         else if(MovX == 0) RG2D.velocity = new Vector2(RG2D.velocity.x / 2, RG2D.velocity.y);
         
-        if(Input.GetButtonDown("Vertical") && !Jumping)
+        if((Input.GetButtonDown("Vertical") || Input.GetButtonDown("Jump")) && !Jumping)
         {
-            RG2D.velocity = new Vector2(RG2D.velocity.x, JumpForce);
+            RG2D.velocity = new Vector2(RG2D.velocity.x, container.jumpHeight);
             Jumping = true;
         }
     }
