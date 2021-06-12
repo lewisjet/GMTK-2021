@@ -23,7 +23,6 @@ public class PlayerController : MonoBehaviour
     private void Update()
     {
         MovX = Input.GetAxisRaw("Horizontal");
-        MovY = Input.GetAxisRaw("Vertical");
 
         if(MovX != 0)
          { 
@@ -32,14 +31,14 @@ public class PlayerController : MonoBehaviour
               }
         else if(MovX == 0) RG2D.velocity = new Vector2(RG2D.velocity.x / 2, RG2D.velocity.y);
         
-        if(MovY == 1 && !Jumping)
+        if(Input.GetButtonDown("Vertical") && !Jumping)
         {
             RG2D.velocity = new Vector2(RG2D.velocity.x, JumpForce);
             Jumping = true;
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         Jumping = false;
     }
