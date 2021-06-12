@@ -27,7 +27,7 @@ public class PlayerController : MonoBehaviour
         if(MovX != 0)
          { 
               RG2D.velocity = new Vector2(MovX * MoveSpeed, RG2D.velocity.y);
-               _spriteRenderer.transform.localScale = MovX < Mathf.Epsilon ? new Vector3(-1,1,1) : new Vector3(1,1,1);
+               _spriteRenderer.transform.localScale = MovX < Mathf.Epsilon ? new Vector3(-0.3f,0.3f,1) : new Vector3(0.3f,0.3f,1);
               }
         else if(MovX == 0) RG2D.velocity = new Vector2(RG2D.velocity.x / 2, RG2D.velocity.y);
         
