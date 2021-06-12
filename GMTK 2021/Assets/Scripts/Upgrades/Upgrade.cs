@@ -26,8 +26,9 @@ public class Gun : Upgrade
         if(Input.GetButtonDown("Submit"))
         {
            var x = pc.PCInstantiate<DamageDealingModule>(pc.bullet);
-           x.transform.position = pc.transform.position;
-           x.transform.localScale = pc.transform.localScale;
+           x.gameObject.transform.position = pc.transform.position;
+           var xPos = pc.spriteRenderer.transform.localScale.x == Mathf.Abs(pc.transform.localScale.x) ? 1f : -1f;
+           x.gameObject.transform.localScale = new Vector3(xPos, 1f , 1f );
         }
     }
 }

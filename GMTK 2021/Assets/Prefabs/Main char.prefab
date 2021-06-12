@@ -476,6 +476,7 @@ MonoBehaviour:
   _health: 0
   _info: {fileID: 11400000, guid: 225b9d90ef0792746af567802bdbb7b2, type: 2}
   _isNotHuman: 0
+  target: {fileID: 7800906488072868838}
   _maxHealth: 100
 --- !u!1 &3548455284185366121
 GameObject:
@@ -737,9 +738,13 @@ MonoBehaviour:
   MoveSpeed: 5
   Jumping: 0
   bullet: {fileID: 3683206866268168245, guid: f2b0fa2613a86364bbee7ac41504c104, type: 3}
+<<<<<<< HEAD
   PlayerSprite: {fileID: -8769520440861010503, guid: 00b608a10950c7046a7e56b51289e2a3, type: 3}
   Animator: {fileID: 3548455283697617313}
   _spriteRenderer: {fileID: 3548455283697617326}
+=======
+  spriteRenderer: {fileID: 4303445628267981073}
+>>>>>>> 905cc16c559647fad8a1ec5150c4410ea5507ddf
   container: {fileID: 11400000, guid: 225b9d90ef0792746af567802bdbb7b2, type: 2}
 --- !u!114 &3548455284849362684
 MonoBehaviour:
@@ -755,3 +760,164 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _damageDealt: 1
   _destroyOnImpact: 0
+<<<<<<< HEAD
+=======
+  _notableCeasefires: 
+  _CeasefireID: 1
+--- !u!1001 &7800906487528761963
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 7800906488072868842}
+    m_Modifications:
+    - target: {fileID: 347090489948835017, guid: 2d85bbf15d624054ab19924e0e054fba, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -0.295
+      objectReference: {fileID: 0}
+    - target: {fileID: 347090489948835017, guid: 2d85bbf15d624054ab19924e0e054fba, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -0.2404
+      objectReference: {fileID: 0}
+    - target: {fileID: 347090489948835017, guid: 2d85bbf15d624054ab19924e0e054fba, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.016299963
+      objectReference: {fileID: 0}
+    - target: {fileID: 347090489948835017, guid: 2d85bbf15d624054ab19924e0e054fba, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.011000037
+      objectReference: {fileID: 0}
+    - target: {fileID: 982782658183481694, guid: 2d85bbf15d624054ab19924e0e054fba, type: 3}
+      propertyPath: m_Name
+      value: Dialogue Box
+      objectReference: {fileID: 0}
+    - target: {fileID: 1186073671939812538, guid: 2d85bbf15d624054ab19924e0e054fba, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1186073671939812538, guid: 2d85bbf15d624054ab19924e0e054fba, type: 3}
+      propertyPath: m_SortingOrder
+      value: 999
+      objectReference: {fileID: 0}
+    - target: {fileID: 1884201791124712915, guid: 2d85bbf15d624054ab19924e0e054fba, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4495753204300262367, guid: 2d85bbf15d624054ab19924e0e054fba, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145750014726628930, guid: 2d85bbf15d624054ab19924e0e054fba, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145750014726628930, guid: 2d85bbf15d624054ab19924e0e054fba, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145750014726628930, guid: 2d85bbf15d624054ab19924e0e054fba, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145750014726628930, guid: 2d85bbf15d624054ab19924e0e054fba, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145750014726628930, guid: 2d85bbf15d624054ab19924e0e054fba, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145750014726628930, guid: 2d85bbf15d624054ab19924e0e054fba, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145750014726628930, guid: 2d85bbf15d624054ab19924e0e054fba, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145750014726628930, guid: 2d85bbf15d624054ab19924e0e054fba, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145750014726628930, guid: 2d85bbf15d624054ab19924e0e054fba, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145750014726628930, guid: 2d85bbf15d624054ab19924e0e054fba, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145750014726628930, guid: 2d85bbf15d624054ab19924e0e054fba, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6408662606413672757, guid: 2d85bbf15d624054ab19924e0e054fba, type: 3}
+      propertyPath: _dialogueRaw.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6408662606413672757, guid: 2d85bbf15d624054ab19924e0e054fba, type: 3}
+      propertyPath: _dialogueRaw.Array.data[3].id
+      value: high jump
+      objectReference: {fileID: 0}
+    - target: {fileID: 6408662606413672757, guid: 2d85bbf15d624054ab19924e0e054fba, type: 3}
+      propertyPath: _dialogueRaw.Array.data[4].id
+      value: metal1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6408662606413672757, guid: 2d85bbf15d624054ab19924e0e054fba, type: 3}
+      propertyPath: _dialogueRaw.Array.data[5].id
+      value: gun
+      objectReference: {fileID: 0}
+    - target: {fileID: 6408662606413672757, guid: 2d85bbf15d624054ab19924e0e054fba, type: 3}
+      propertyPath: _dialogueRaw.Array.data[3].lineOfText
+      value: 'High Jump Boots: jump to use'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6408662606413672757, guid: 2d85bbf15d624054ab19924e0e054fba, type: 3}
+      propertyPath: _dialogueRaw.Array.data[4].lineOfText
+      value: Maybe if I get 3 scraps of metal maybe I could make a key in the hardron
+        collider?
+      objectReference: {fileID: 0}
+    - target: {fileID: 6408662606413672757, guid: 2d85bbf15d624054ab19924e0e054fba, type: 3}
+      propertyPath: _dialogueRaw.Array.data[5].lineOfText
+      value: Now I can press enter to fire!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7049365033317466113, guid: 2d85bbf15d624054ab19924e0e054fba, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 5.8061
+      objectReference: {fileID: 0}
+    - target: {fileID: 7049365033317466113, guid: 2d85bbf15d624054ab19924e0e054fba, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 2.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 7049365033317466113, guid: 2d85bbf15d624054ab19924e0e054fba, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.14
+      objectReference: {fileID: 0}
+    - target: {fileID: 7049365033317466113, guid: 2d85bbf15d624054ab19924e0e054fba, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 2.2256
+      objectReference: {fileID: 0}
+    - target: {fileID: 8526527618202106123, guid: 2d85bbf15d624054ab19924e0e054fba, type: 3}
+      propertyPath: m_text
+      value: Lorem ipusm sor does amiet or whatever it is meant to say I don't bloody
+        care
+      objectReference: {fileID: 0}
+    - target: {fileID: 8526527618202106123, guid: 2d85bbf15d624054ab19924e0e054fba, type: 3}
+      propertyPath: m_fontSize
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8526527618202106123, guid: 2d85bbf15d624054ab19924e0e054fba, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8526527618202106123, guid: 2d85bbf15d624054ab19924e0e054fba, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2d85bbf15d624054ab19924e0e054fba, type: 3}
+--- !u!4 &4109662260116376617 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6145750014726628930, guid: 2d85bbf15d624054ab19924e0e054fba, type: 3}
+  m_PrefabInstance: {fileID: 7800906487528761963}
+  m_PrefabAsset: {fileID: 0}
+>>>>>>> 905cc16c559647fad8a1ec5150c4410ea5507ddf
