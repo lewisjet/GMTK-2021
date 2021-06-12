@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class Door : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public int id;
+    public int targetID;
+    public int targetSceneID;
+    private void OnTriggerEnter2D(Collider2D other) 
     {
-        
-    }
+        var player = other.GetComponent<PlayerController>();    
+        if(player == null){ return; }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        Scenemanager.instance.GoToScene(targetSceneID,targetID);
     }
 }

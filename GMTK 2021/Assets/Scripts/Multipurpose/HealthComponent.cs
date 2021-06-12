@@ -2,10 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HealthComponent : MonoBehaviour, IGuidRegistered
+public class HealthComponent : MonoBehaviour
 {
-    public string Guid {get; set;}
-    [SerializeField] private float _health;
+
+    private float _health;
+    [SerializeField] private InformationContainer _info;
+
     [Tooltip("Leave at 0 for no maximum")]
     [SerializeField] private float _maxHealth;
     public float Health { get { return _health; }
@@ -13,11 +15,14 @@ public class HealthComponent : MonoBehaviour, IGuidRegistered
      {
          _health = value;
          if(_health > _maxHealth && _maxHealth != 0) { _health = _maxHealth; }
+          _info.hp = _health;
          if(_health <= 0){ Destroy(gameObject); }
+
      }}
 
-}
-public interface IGuidRegistered
-{
-     string Guid { get; set;}
+     private void Awake() 
+     {
+         _health = _info.hp;
+     }
+
 }
