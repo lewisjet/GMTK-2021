@@ -268,6 +268,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MoveSpeed: 5
   Jumping: 0
+  bullet: {fileID: 3683206866268168245, guid: f2b0fa2613a86364bbee7ac41504c104, type: 3}
   _spriteRenderer: {fileID: 4303445628267981073}
   container: {fileID: 11400000, guid: 225b9d90ef0792746af567802bdbb7b2, type: 2}
 --- !u!114 &6914618446375736019
@@ -373,15 +374,32 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6408662606413672757, guid: 2d85bbf15d624054ab19924e0e054fba, type: 3}
       propertyPath: _dialogueRaw.Array.size
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6408662606413672757, guid: 2d85bbf15d624054ab19924e0e054fba, type: 3}
       propertyPath: _dialogueRaw.Array.data[3].id
       value: high jump
       objectReference: {fileID: 0}
     - target: {fileID: 6408662606413672757, guid: 2d85bbf15d624054ab19924e0e054fba, type: 3}
+      propertyPath: _dialogueRaw.Array.data[4].id
+      value: metal1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6408662606413672757, guid: 2d85bbf15d624054ab19924e0e054fba, type: 3}
+      propertyPath: _dialogueRaw.Array.data[5].id
+      value: gun
+      objectReference: {fileID: 0}
+    - target: {fileID: 6408662606413672757, guid: 2d85bbf15d624054ab19924e0e054fba, type: 3}
       propertyPath: _dialogueRaw.Array.data[3].lineOfText
       value: 'High Jump Boots: jump to use'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6408662606413672757, guid: 2d85bbf15d624054ab19924e0e054fba, type: 3}
+      propertyPath: _dialogueRaw.Array.data[4].lineOfText
+      value: Maybe if I get 3 scraps of metal maybe I could make a key in the hardron
+        collider?
+      objectReference: {fileID: 0}
+    - target: {fileID: 6408662606413672757, guid: 2d85bbf15d624054ab19924e0e054fba, type: 3}
+      propertyPath: _dialogueRaw.Array.data[5].lineOfText
+      value: Now I can press enter to fire!
       objectReference: {fileID: 0}
     - target: {fileID: 7049365033317466113, guid: 2d85bbf15d624054ab19924e0e054fba, type: 3}
       propertyPath: m_SizeDelta.x

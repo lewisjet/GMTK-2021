@@ -10,6 +10,8 @@ public class PlayerController : MonoBehaviour
     public float MoveSpeed;
     public bool Jumping;
 
+    public DamageDealingModule bullet;
+
     private Rigidbody2D RG2D;
 
     [SerializeField] private SpriteRenderer _spriteRenderer;
@@ -20,8 +22,12 @@ public class PlayerController : MonoBehaviour
         RG2D = GetComponent<Rigidbody2D>();
     }
 
+
+
     private void Update()
     {
+        container.unlockedUpgrades.ForEach(i => i.Invoke(this));
+
         MovX = Input.GetAxisRaw("Horizontal");
 
         if(MovX != 0)
@@ -42,4 +48,6 @@ public class PlayerController : MonoBehaviour
     {
         Jumping = false;
     }
+
+    public T PCInstantiate<T>(T go) where T : UnityEngine.Object => Instantiate(go) as T;
 }

@@ -5,7 +5,7 @@ using UnityEngine;
 public abstract class Upgrade
 {
     public virtual void OnPickup(InformationContainer ic){}
-    public virtual void Invoke(){}
+    public virtual void Invoke(PlayerController pc){}
 }
 
 
@@ -17,5 +17,17 @@ public class HighJump : Upgrade
     public override void OnPickup(InformationContainer ic)
     {
         ic.jumpHeight += 5f;
+    }
+}
+public class Gun : Upgrade
+{
+    public override void Invoke(PlayerController pc)
+    {
+        if(Input.GetButtonDown("Submit"))
+        {
+           var x = pc.PCInstantiate<DamageDealingModule>(pc.bullet);
+           x.transform.position = pc.transform.position;
+           x.transform.localScale = pc.transform.localScale;
+        }
     }
 }
