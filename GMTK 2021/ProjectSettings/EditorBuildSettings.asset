@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Lab zone/Hadron Linking Corridoor.unity
+    guid: 970166f09987d564fb091d0edf8bd090
+  - enabled: 1
+    path: Assets/Scenes/Lab zone/Storage room.unity
+    guid: 9918cf7c46bbefb4b83b7671565da806
   m_configObjects: {}
