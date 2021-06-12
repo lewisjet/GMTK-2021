@@ -12,8 +12,10 @@ public class PlayerController : MonoBehaviour
 
     public DamageDealingModule bullet;
 
-    private Rigidbody2D RG2D;
+    public Sprite PlayerSprite;
 
+    private Rigidbody2D RG2D;
+    public Animator Animator;
     [SerializeField] private SpriteRenderer _spriteRenderer;
     public InformationContainer container;
 
@@ -30,12 +32,17 @@ public class PlayerController : MonoBehaviour
 
         MovX = Input.GetAxisRaw("Horizontal");
 
-        if(MovX != 0)
-         { 
-              RG2D.velocity = new Vector2(MovX * MoveSpeed, RG2D.velocity.y);
-               _spriteRenderer.transform.localScale = MovX < Mathf.Epsilon ? new Vector3(-1f,1,1) : new Vector3(1f,1,1);
-              }
-        else if(MovX == 0) RG2D.velocity = new Vector2(RG2D.velocity.x / 2, RG2D.velocity.y);
+        if (MovX != 0)
+        {
+            RG2D.velocity = new Vector2(MovX * MoveSpeed, RG2D.velocity.y);
+            _spriteRenderer.transform.localScale = MovX < Mathf.Epsilon ? new Vector3(-1.5f, 1.5f, 1) : new Vector3(1.5f, 1.5f, 1);
+            Animator.Play("PlayerWalk");
+        }
+        else if (MovX == 0)
+        {
+            Animator.Play("Idle");
+            RG2D.velocity = new Vector2(RG2D.velocity.x / 2, RG2D.velocity.y);
+        }
         
         if((Input.GetButtonDown("Vertical") || Input.GetButtonDown("Jump")) && !Jumping)
         {
