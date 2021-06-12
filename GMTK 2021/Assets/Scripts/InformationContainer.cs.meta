@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:GMTK 2021/Assets/Scripts/InformationContainer.cs.meta
 guid: 073136eb1fef6e849ac4dfc8982aa983
+=======
+guid: ca86381cf76720e458932545d7ef95c3
+>>>>>>> e181a74ed9ef4ffa8cc2fb942218261764e21a24:GMTK 2021/Assets/Scripts/InofrmationContainer.cs.meta
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2

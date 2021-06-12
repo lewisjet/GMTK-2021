@@ -5,6 +5,18 @@ TextureImporter:
   - first:
       213: 6385643269289009822
     second: Transformer_0
+  - first:
+      213: -5831370259370963211
+    second: Transformer_1
+  - first:
+      213: -5974599792472797432
+    second: Transformer_2
+  - first:
+      213: -4936471763063066256
+    second: Transformer_3
+  - first:
+      213: -1283673190076318732
+    second: Transformer_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -138,7 +150,7 @@ TextureImporter:
         width: 560
         height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -146,6 +158,90 @@ TextureImporter:
       bones: []
       spriteID: e92e55888bc5e9850800000000000000
       internalID: 6385643269289009822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transformer_1
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 90
+        width: 560
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fe8a6025afc21fa0800000000000000
+      internalID: -5831370259370963211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transformer_2
+      rect:
+        serializedVersion: 2
+        x: 1960
+        y: 90
+        width: 560
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80f498eb425f51da0800000000000000
+      internalID: -5974599792472797432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transformer_3
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 90
+        width: 560
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07131e606112e7bb0800000000000000
+      internalID: -4936471763063066256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transformer_4
+      rect:
+        serializedVersion: 2
+        x: 2600
+        y: 90
+        width: 560
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fbfec9e80a7f2ee0800000000000000
+      internalID: -1283673190076318732
       vertices: []
       indices: 
       edges: []
