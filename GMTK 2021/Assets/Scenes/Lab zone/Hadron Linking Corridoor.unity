@@ -19712,6 +19712,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7800906487765377209, guid: 94f7fbc4d4897c44cba89d8ddafbf334, type: 3}
+      propertyPath: m_Size.x
+      value: 2.27345
+      objectReference: {fileID: 0}
+    - target: {fileID: 7800906487765377209, guid: 94f7fbc4d4897c44cba89d8ddafbf334, type: 3}
+      propertyPath: m_Size.y
+      value: 4.7777014
+      objectReference: {fileID: 0}
+    - target: {fileID: 7800906487765377209, guid: 94f7fbc4d4897c44cba89d8ddafbf334, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 0f7371e0cf4701a4ca4879a75d9e57f5, type: 2}
+    - target: {fileID: 7800906487765377209, guid: 94f7fbc4d4897c44cba89d8ddafbf334, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.020330012
+      objectReference: {fileID: 0}
+    - target: {fileID: 7800906487765377209, guid: 94f7fbc4d4897c44cba89d8ddafbf334, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.32472658
+      objectReference: {fileID: 0}
     - target: {fileID: 7800906488072868838, guid: 94f7fbc4d4897c44cba89d8ddafbf334, type: 3}
       propertyPath: m_Name
       value: Main char
