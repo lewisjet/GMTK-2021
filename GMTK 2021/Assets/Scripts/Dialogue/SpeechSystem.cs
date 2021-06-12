@@ -27,17 +27,13 @@ public class SpeechSystem : MonoBehaviour
 
     public void CloseDialogue() => _dialogueBox.SetActive(false);
 
-    public void OpenDialogueGradual(string lineId, float timePeriodBetweenTypes)
+     public IEnumerator OpenDialogue(string lineId, float seconds)
     {
-        IEnumerator GradualIntroduction(char character)
-        {
-            _text.text += character;
-            yield return new WaitForSeconds(timePeriodBetweenTypes);
-        } 
-        Array.ForEach(_dialogueDictionary[lineId].ToCharArray(), i => StartCoroutine(GradualIntroduction(i)));
-
+        _dialogueBox.SetActive(true);
+        _text.text = _dialogueDictionary[lineId];
+        yield return new WaitForSeconds(seconds);
+        _dialogueBox.SetActive(false);
     }
-
 
     [System.Serializable]
     public struct DialogueLine

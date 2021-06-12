@@ -11,4 +11,12 @@ public class InformationContainer : ScriptableObject
 
     public int doorId = -1;
 
+    public void Clear()
+    {
+        hp = 100f;
+        jumpHeight = 10.5f;
+        unlockedUpgrades = new List<Upgrade>();
+        doorId = -1;
+    }
+
 }

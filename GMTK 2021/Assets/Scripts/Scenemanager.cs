@@ -12,12 +12,14 @@ public class Scenemanager : MonoBehaviour
     private void Awake() 
     {
         instance = this;  
+    }
 
-        if(_informationContainer.doorId < 0) { return; }  
+    private void Start() 
+    {
+        if(_informationContainer.doorId == -1) { return; }  
         FindObjectOfType<PlayerController>().transform.position = FindObjectsOfType<Door>().First(i => i.id == _informationContainer.doorId).transform.position;
         _informationContainer.doorId = -1;
     }
-
     public void GoToScene(int id) => SceneManager.LoadScene(id);
     public void GoToScene(int id, int doorID)
     {

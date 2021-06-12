@@ -32275,10 +32275,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0053f209c77d04b428181c53703d6a66, type: 3}
---- !u!4 &1645429167 stripped
+--- !u!4 &1689396888 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7800906488072868842, guid: 94f7fbc4d4897c44cba89d8ddafbf334, type: 3}
-  m_PrefabInstance: {fileID: 1928604936}
+  m_PrefabInstance: {fileID: 7800906488669386098}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1719463732
 GameObject:
@@ -32395,82 +32395,63 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0053f209c77d04b428181c53703d6a66, type: 3}
-<<<<<<< HEAD:GMTK 2021/Assets/Scenes/Lab zone/Storage room.unity
-=======
---- !u!1001 &1928604936
+--- !u!1001 &1881581367
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 7800906487765377209, guid: 94f7fbc4d4897c44cba89d8ddafbf334, type: 3}
-      propertyPath: m_Size.x
-      value: 2.27345
-      objectReference: {fileID: 0}
-    - target: {fileID: 7800906487765377209, guid: 94f7fbc4d4897c44cba89d8ddafbf334, type: 3}
-      propertyPath: m_Size.y
-      value: 4.7777014
-      objectReference: {fileID: 0}
-    - target: {fileID: 7800906487765377209, guid: 94f7fbc4d4897c44cba89d8ddafbf334, type: 3}
-      propertyPath: m_Offset.x
-      value: -0.020330012
-      objectReference: {fileID: 0}
-    - target: {fileID: 7800906487765377209, guid: 94f7fbc4d4897c44cba89d8ddafbf334, type: 3}
-      propertyPath: m_Offset.y
-      value: -0.32472658
-      objectReference: {fileID: 0}
-    - target: {fileID: 7800906488072868838, guid: 94f7fbc4d4897c44cba89d8ddafbf334, type: 3}
-      propertyPath: m_Name
-      value: Main char
-      objectReference: {fileID: 0}
-    - target: {fileID: 7800906488072868842, guid: 94f7fbc4d4897c44cba89d8ddafbf334, type: 3}
+    - target: {fileID: 474395801148041006, guid: 253e6ca7408401f44a5e9154f73c03dd, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 7
       objectReference: {fileID: 0}
-    - target: {fileID: 7800906488072868842, guid: 94f7fbc4d4897c44cba89d8ddafbf334, type: 3}
+    - target: {fileID: 474395801148041006, guid: 253e6ca7408401f44a5e9154f73c03dd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -17.79
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7800906488072868842, guid: 94f7fbc4d4897c44cba89d8ddafbf334, type: 3}
+    - target: {fileID: 474395801148041006, guid: 253e6ca7408401f44a5e9154f73c03dd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.97
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7800906488072868842, guid: 94f7fbc4d4897c44cba89d8ddafbf334, type: 3}
+    - target: {fileID: 474395801148041006, guid: 253e6ca7408401f44a5e9154f73c03dd, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7800906488072868842, guid: 94f7fbc4d4897c44cba89d8ddafbf334, type: 3}
+    - target: {fileID: 474395801148041006, guid: 253e6ca7408401f44a5e9154f73c03dd, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 7800906488072868842, guid: 94f7fbc4d4897c44cba89d8ddafbf334, type: 3}
+    - target: {fileID: 474395801148041006, guid: 253e6ca7408401f44a5e9154f73c03dd, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7800906488072868842, guid: 94f7fbc4d4897c44cba89d8ddafbf334, type: 3}
+    - target: {fileID: 474395801148041006, guid: 253e6ca7408401f44a5e9154f73c03dd, type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7800906488072868842, guid: 94f7fbc4d4897c44cba89d8ddafbf334, type: 3}
+    - target: {fileID: 474395801148041006, guid: 253e6ca7408401f44a5e9154f73c03dd, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7800906488072868842, guid: 94f7fbc4d4897c44cba89d8ddafbf334, type: 3}
+    - target: {fileID: 474395801148041006, guid: 253e6ca7408401f44a5e9154f73c03dd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7800906488072868842, guid: 94f7fbc4d4897c44cba89d8ddafbf334, type: 3}
+    - target: {fileID: 474395801148041006, guid: 253e6ca7408401f44a5e9154f73c03dd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7800906488072868842, guid: 94f7fbc4d4897c44cba89d8ddafbf334, type: 3}
+    - target: {fileID: 474395801148041006, guid: 253e6ca7408401f44a5e9154f73c03dd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7850179042914132151, guid: 253e6ca7408401f44a5e9154f73c03dd, type: 3}
+      propertyPath: m_Name
+      value: ddol
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 94f7fbc4d4897c44cba89d8ddafbf334, type: 3}
->>>>>>> c1e6f8ca2c5b27a9641b47ce44e22c2415dca8d2:GMTK 2021/Assets/Scenes/Lab zone/Storage_room.unity
+  m_SourcePrefab: {fileID: 100100000, guid: 253e6ca7408401f44a5e9154f73c03dd, type: 3}
 --- !u!1 &1953209977
 GameObject:
   m_ObjectHideFlags: 0
@@ -32584,19 +32565,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1055392185611757384, guid: b9298403b02d614488bd5a6ad08a8dfb, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD:GMTK 2021/Assets/Scenes/Lab zone/Storage room.unity
       value: 3
-=======
-      value: 2
->>>>>>> c1e6f8ca2c5b27a9641b47ce44e22c2415dca8d2:GMTK 2021/Assets/Scenes/Lab zone/Storage_room.unity
       objectReference: {fileID: 0}
     - target: {fileID: 1055392185611757384, guid: b9298403b02d614488bd5a6ad08a8dfb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -17.79
+      value: -18.17
       objectReference: {fileID: 0}
     - target: {fileID: 1055392185611757384, guid: b9298403b02d614488bd5a6ad08a8dfb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.97
+      value: -2.55
       objectReference: {fileID: 0}
     - target: {fileID: 1055392185611757384, guid: b9298403b02d614488bd5a6ad08a8dfb, type: 3}
       propertyPath: m_LocalPosition.z
@@ -32637,7 +32614,7 @@ PrefabInstance:
     - target: {fileID: 1055392185611757387, guid: b9298403b02d614488bd5a6ad08a8dfb, type: 3}
       propertyPath: m_Follow
       value: 
-      objectReference: {fileID: 1645429167}
+      objectReference: {fileID: 1689396888}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b9298403b02d614488bd5a6ad08a8dfb, type: 3}
 --- !u!1001 &5097153837292925239
@@ -32677,11 +32654,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5097153836861655479, guid: 84039b95a4977ed4296c4a0552ad13ec, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -17.79
+      value: -18.17
       objectReference: {fileID: 0}
     - target: {fileID: 5097153836861655479, guid: 84039b95a4977ed4296c4a0552ad13ec, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.97
+      value: -2.55
       objectReference: {fileID: 0}
     - target: {fileID: 5097153836861655479, guid: 84039b95a4977ed4296c4a0552ad13ec, type: 3}
       propertyPath: m_LocalPosition.z
@@ -32717,7 +32694,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 84039b95a4977ed4296c4a0552ad13ec, type: 3}
-<<<<<<< HEAD:GMTK 2021/Assets/Scenes/Lab zone/Storage room.unity
 --- !u!1001 &7800906488669386098
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32776,5 +32752,3 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 3781149763103093723, guid: 94f7fbc4d4897c44cba89d8ddafbf334, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 94f7fbc4d4897c44cba89d8ddafbf334, type: 3}
-=======
->>>>>>> c1e6f8ca2c5b27a9641b47ce44e22c2415dca8d2:GMTK 2021/Assets/Scenes/Lab zone/Storage_room.unity

@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Info
   m_EditorClassIdentifier: 
   hp: 100
+  jumpHeight: 10.5
   doorId: -1
