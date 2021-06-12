@@ -5,8 +5,10 @@ using UnityEngine;
 public class HealthComponent : MonoBehaviour
 {
 
-    private float _health;
+    [SerializeField] private float _health;
     [SerializeField] private InformationContainer _info;
+    [SerializeField] private bool _isNotHuman;
+    
 
     [Tooltip("Leave at 0 for no maximum")]
     [SerializeField] private float _maxHealth;
@@ -15,13 +17,14 @@ public class HealthComponent : MonoBehaviour
      {
          _health = value;
          if(_health > _maxHealth && _maxHealth != 0) { _health = _maxHealth; }
-          _info.hp = _health;
+         if(!_isNotHuman) _info.hp = _health;
          if(_health <= 0){ Destroy(gameObject); }
 
      }}
 
      private void Awake() 
      {
+         if(!_isNotHuman)
          _health = _info.hp;
      }
 
