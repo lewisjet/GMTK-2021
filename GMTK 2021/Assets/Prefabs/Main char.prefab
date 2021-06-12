@@ -169,6 +169,7 @@ MonoBehaviour:
   _health: 0
   _info: {fileID: 11400000, guid: 225b9d90ef0792746af567802bdbb7b2, type: 2}
   _isNotHuman: 0
+  target: {fileID: 7800906488072868838}
   _maxHealth: 100
 --- !u!1 &7800906488072868838
 GameObject:
@@ -269,7 +270,7 @@ MonoBehaviour:
   MoveSpeed: 5
   Jumping: 0
   bullet: {fileID: 3683206866268168245, guid: f2b0fa2613a86364bbee7ac41504c104, type: 3}
-  _spriteRenderer: {fileID: 4303445628267981073}
+  spriteRenderer: {fileID: 4303445628267981073}
   container: {fileID: 11400000, guid: 225b9d90ef0792746af567802bdbb7b2, type: 2}
 --- !u!114 &6914618446375736019
 MonoBehaviour:
@@ -285,6 +286,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _damageDealt: 1
   _destroyOnImpact: 0
+  _notableCeasefires: 
+  _CeasefireID: 1
 --- !u!1001 &7800906487528761963
 PrefabInstance:
   m_ObjectHideFlags: 0

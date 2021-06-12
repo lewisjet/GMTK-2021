@@ -14,7 +14,7 @@ public class PlayerController : MonoBehaviour
 
     private Rigidbody2D RG2D;
 
-    [SerializeField] private SpriteRenderer _spriteRenderer;
+    [SerializeField] public SpriteRenderer spriteRenderer;
     public InformationContainer container;
 
     private void Start()
@@ -33,7 +33,7 @@ public class PlayerController : MonoBehaviour
         if(MovX != 0)
          { 
               RG2D.velocity = new Vector2(MovX * MoveSpeed, RG2D.velocity.y);
-               _spriteRenderer.transform.localScale = MovX < Mathf.Epsilon ? new Vector3(-1f,1,1) : new Vector3(1f,1,1);
+               spriteRenderer.transform.localScale = MovX < Mathf.Epsilon ? new Vector3(-1f,1,1) : new Vector3(1f,1,1);
               }
         else if(MovX == 0) RG2D.velocity = new Vector2(RG2D.velocity.x / 2, RG2D.velocity.y);
         
