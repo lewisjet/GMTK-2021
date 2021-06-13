@@ -20,7 +20,7 @@ public class HealthComponent : MonoBehaviour
          if(_health > _maxHealth && _maxHealth != 0) { _health = _maxHealth; }
          if(!_isNotHuman) _info.hp = _health;
          if(_health <= 0 && appearer) { appearer.SetActive(true); }
-         if(_health <= 0){ if(target){Destroy(target);}else{Destroy(gameObject);} }
+         if(_health <= 0){ if(target){if(!_isNotHuman){ _info.hp = _maxHealth; Scenemanager.instance.GoToScene(13); } Destroy(target);}else{  Destroy(gameObject);} }
 
      }}
 
