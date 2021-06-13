@@ -22,15 +22,14 @@ public class MainMenu : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown("s")) SelectedButton++;
         else if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown("w")) SelectedButton--;
-        if (SelectedButton > 3) SelectedButton = 3;
+        if (SelectedButton > 2) SelectedButton = 2;
         else if (SelectedButton < 0) SelectedButton = 0;
 
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.KeypadEnter))
         {
             if (SelectedButton == 0) SceneManager.LoadScene(1);
             else if (SelectedButton == 1) SceneManager.LoadScene(7);
-            else if (SelectedButton == 2) SceneManager.LoadScene(6);
-            else if (SelectedButton == 3) Application.Quit();
+            else if (SelectedButton == 2) Application.Quit();
         }
 
         ButtonCursor.transform.position = ButtonPos[SelectedButton];
