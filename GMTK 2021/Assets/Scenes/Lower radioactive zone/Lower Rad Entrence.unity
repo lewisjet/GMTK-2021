@@ -16438,6 +16438,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0053f209c77d04b428181c53703d6a66, type: 3}
+--- !u!4 &1697728160 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7800906488072868842, guid: 94f7fbc4d4897c44cba89d8ddafbf334, type: 3}
+  m_PrefabInstance: {fileID: 7800906488669386098}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2092830585
 GameObject:
   m_ObjectHideFlags: 0
@@ -16480,7 +16485,7 @@ Transform:
   m_Children:
   - {fileID: 359241203}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1055392185123111498
 PrefabInstance:
@@ -16540,7 +16545,7 @@ PrefabInstance:
     - target: {fileID: 1055392185611757387, guid: b9298403b02d614488bd5a6ad08a8dfb, type: 3}
       propertyPath: m_Follow
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1697728160}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b9298403b02d614488bd5a6ad08a8dfb, type: 3}
 --- !u!1001 &2682273182097284580
@@ -16785,10 +16790,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3548455284033326237, guid: 94f7fbc4d4897c44cba89d8ddafbf334, type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 6200000, guid: 0f7371e0cf4701a4ca4879a75d9e57f5, type: 2}
     - target: {fileID: 7800906488072868838, guid: 94f7fbc4d4897c44cba89d8ddafbf334, type: 3}
       propertyPath: m_Name
       value: Main char
