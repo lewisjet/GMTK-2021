@@ -386,7 +386,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Made in 48 hours for the GMTK Game Jam. \n- Made by Lewisjet & Empoweranimations-\n\n"
+  m_Text: "Made in 48 hours for the GMTK Game Jam. \n- Made by Lewis Page & Empoweranimations
+    -\n\n"
 --- !u!222 &1392093301
 CanvasRenderer:
   m_ObjectHideFlags: 0
