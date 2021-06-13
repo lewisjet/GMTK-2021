@@ -20,8 +20,8 @@ public class InformationContainer : ScriptableObject
         jumpHeight = 10.5f;
         unlockedUpgrades = new List<Upgrade>();
         doorId = -1;
-        startingGame = false;
-        endingGame = true;
+        startingGame = true;
+        endingGame = false;
     }
 
 }
