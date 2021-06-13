@@ -19,4 +19,9 @@ public class GameOver : MonoBehaviour
     {
         Application.Quit();
     }
+
+    public void Back()
+    {
+        SceneManager.LoadScene(0);
+    }
 }
