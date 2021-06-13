@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 2121139223243961141}
   - component: {fileID: 3503288436893627975}
   - component: {fileID: 937442579185791535}
+  - component: {fileID: -4880846111670675035}
   m_Layer: 0
   m_Name: Spit
   m_TagString: Untagged
@@ -151,3 +152,24 @@ MonoBehaviour:
   _isNotHuman: 1
   target: {fileID: 0}
   _maxHealth: 1
+--- !u!50 &-4880846111670675035
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 535764266202915133}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 99999
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
