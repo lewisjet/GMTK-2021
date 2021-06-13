@@ -22,6 +22,7 @@ public class PlayerController : MonoBehaviour
     }
     private void Update()
     {
+        if(container.endingGame || container.startingGame) { return; }
         container.unlockedUpgrades.ForEach(i => i.Invoke(this));
         MovX = Input.GetAxisRaw("Horizontal");
         if (MovX != 0)

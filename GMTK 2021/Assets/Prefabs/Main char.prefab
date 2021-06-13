@@ -190,6 +190,7 @@ MonoBehaviour:
   _info: {fileID: 11400000, guid: 225b9d90ef0792746af567802bdbb7b2, type: 2}
   _isNotHuman: 0
   target: {fileID: 7800906488072868838}
+  appearer: {fileID: 0}
   _maxHealth: 100
 --- !u!1 &7800906488072868838
 GameObject:
@@ -399,7 +400,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6408662606413672757, guid: 2d85bbf15d624054ab19924e0e054fba, type: 3}
       propertyPath: _dialogueRaw.Array.size
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6408662606413672757, guid: 2d85bbf15d624054ab19924e0e054fba, type: 3}
       propertyPath: _dialogueRaw.Array.data[3].id
@@ -414,6 +415,10 @@ PrefabInstance:
       value: gun
       objectReference: {fileID: 0}
     - target: {fileID: 6408662606413672757, guid: 2d85bbf15d624054ab19924e0e054fba, type: 3}
+      propertyPath: _dialogueRaw.Array.data[6].id
+      value: controls
+      objectReference: {fileID: 0}
+    - target: {fileID: 6408662606413672757, guid: 2d85bbf15d624054ab19924e0e054fba, type: 3}
       propertyPath: _dialogueRaw.Array.data[3].lineOfText
       value: 'High Jump Boots: jump to use'
       objectReference: {fileID: 0}
@@ -425,6 +430,10 @@ PrefabInstance:
     - target: {fileID: 6408662606413672757, guid: 2d85bbf15d624054ab19924e0e054fba, type: 3}
       propertyPath: _dialogueRaw.Array.data[5].lineOfText
       value: Now I can press enter to fire!
+      objectReference: {fileID: 0}
+    - target: {fileID: 6408662606413672757, guid: 2d85bbf15d624054ab19924e0e054fba, type: 3}
+      propertyPath: _dialogueRaw.Array.data[6].lineOfText
+      value: A and D to move, W or Space to jump.
       objectReference: {fileID: 0}
     - target: {fileID: 7049365033317466113, guid: 2d85bbf15d624054ab19924e0e054fba, type: 3}
       propertyPath: m_SizeDelta.x

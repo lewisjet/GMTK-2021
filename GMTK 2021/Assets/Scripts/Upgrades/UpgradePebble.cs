@@ -21,6 +21,17 @@ public class UpgradePebble : MonoBehaviour
         container.unlockedUpgrades.Add(u);
         u.OnPickup(container);
        StartCoroutine(FindObjectOfType<SpeechSystem>().OpenDialogue(dialogueID,3f));
+
+        if(
+            container.unlockedUpgrades.Where(i => i.GetType() == typeof(Metal1)).ToArray().Length > 0 &&
+            container.unlockedUpgrades.Where(i => i.GetType() == typeof(Metal2)).ToArray().Length > 0 &&
+            container.unlockedUpgrades.Where(i => i.GetType() == typeof(Metal3)).ToArray().Length > 0
+        )
+        {
+            container.endingGame = true;
+            Scenemanager.instance.GoToScene(8);
+        }
+
         Destroy(gameObject);
     }
 }

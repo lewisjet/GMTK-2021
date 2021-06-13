@@ -9,6 +9,9 @@ public class InformationContainer : ScriptableObject
     public float jumpHeight = 10.5f;
     public List<Upgrade> unlockedUpgrades = new List<Upgrade>();
 
+    public bool startingGame = true;
+    public bool endingGame = false;
+
     public int doorId = -1;
 
     public void Clear()
@@ -17,6 +20,8 @@ public class InformationContainer : ScriptableObject
         jumpHeight = 10.5f;
         unlockedUpgrades = new List<Upgrade>();
         doorId = -1;
+        startingGame = true;
+        endingGame = false;
     }
 
 }
