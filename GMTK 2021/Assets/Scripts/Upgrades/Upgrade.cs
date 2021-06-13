@@ -4,7 +4,9 @@ using UnityEngine;
 
 public abstract class Upgrade
 {
-    public virtual void OnPickup(InformationContainer ic){}
+    public virtual void OnPickup(InformationContainer ic){
+        ic.hp = ic.hp + 50f > 100f ? 100f : ic.hp + 50f;
+    }
     public virtual void Invoke(PlayerController pc){}
 }
 
@@ -17,6 +19,7 @@ public class HighJump : Upgrade
     public override void OnPickup(InformationContainer ic)
     {
         ic.jumpHeight += 5f;
+        base.OnPickup(ic);
     }
 }
 public class Gun : Upgrade

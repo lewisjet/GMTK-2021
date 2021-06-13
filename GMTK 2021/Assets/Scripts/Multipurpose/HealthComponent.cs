@@ -15,6 +15,7 @@ public class HealthComponent : MonoBehaviour
     public float Health { get { return _health; }
      set
      {
+         if(!_isNotHuman) _health = _info.hp;
          _health = value;
          if(_health > _maxHealth && _maxHealth != 0) { _health = _maxHealth; }
          if(!_isNotHuman) _info.hp = _health;
