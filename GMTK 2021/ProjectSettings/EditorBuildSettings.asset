@@ -9,12 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Menus/MainMenu.unity
     guid: 7ef7e283c1303f042b459aac2965d73d
   - enabled: 1
-    path: Assets/Scenes/Menus/About.unity
-    guid: 262327e670f59c84caf4c34d8c74cddc
-  - enabled: 1
-    path: Assets/Scenes/Menus/Settings.unity
-    guid: e97648c2eb0fe5a479c5129da7fffba5
-  - enabled: 1
     path: Assets/Scenes/Hadron Collider.unity
     guid: fd5ec03f6309d37459271fe409d63dc6
   - enabled: 1
@@ -29,4 +23,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Lower radioactive zone/Gunnery.unity
     guid: 38836e239b8393845a2d44c6a99f9d3d
+  - enabled: 1
+    path: Assets/Scenes/Menus/Settings.unity
+    guid: e97648c2eb0fe5a479c5129da7fffba5
+  - enabled: 1
+    path: Assets/Scenes/Menus/About.unity
+    guid: 262327e670f59c84caf4c34d8c74cddc
   m_configObjects: {}

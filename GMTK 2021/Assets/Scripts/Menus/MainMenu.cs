@@ -27,12 +27,32 @@ public class MainMenu : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.KeypadEnter))
         {
-            if (SelectedButton == 0) SceneManager.LoadScene(3);
-            else if (SelectedButton == 1) SceneManager.LoadScene(1);
-            else if (SelectedButton == 2) SceneManager.LoadScene(2);
+            if (SelectedButton == 0) SceneManager.LoadScene(1);
+            else if (SelectedButton == 1) SceneManager.LoadScene(7);
+            else if (SelectedButton == 2) SceneManager.LoadScene(6);
             else if (SelectedButton == 3) Application.Quit();
         }
 
         ButtonCursor.transform.position = ButtonPos[SelectedButton];
+    }
+
+    public void Play()
+    {
+        SceneManager.LoadScene(1);
+    }
+
+    public void About()
+    {
+        SceneManager.LoadScene(6);
+    }
+
+    public void Settings()
+    {
+        SceneManager.LoadScene(7);
+    }
+
+    public void Exit()
+    {
+        Application.Quit();
     }
 }
