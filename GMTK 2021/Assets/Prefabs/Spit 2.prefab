@@ -11,12 +11,12 @@ GameObject:
   - component: {fileID: 6575221766689441754}
   - component: {fileID: 7364941461418820686}
   - component: {fileID: 5439061914131475804}
-  - component: {fileID: 2121139223243961141}
   - component: {fileID: 3503288436893627975}
   - component: {fileID: 937442579185791535}
-  - component: {fileID: 779962756812579340}
+  - component: {fileID: 6185695493423443407}
+  - component: {fileID: 5529382060067859824}
   m_Layer: 0
-  m_Name: Spit 1
+  m_Name: Spit 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -77,8 +77,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -1
-  m_Sprite: {fileID: 21300000, guid: 4ad523647aed96a4b9f61a37419cfa28, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 265c353c13a108746b59d01d8ac28dc3, type: 3}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -101,24 +101,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nodes: []
-  _speed: 18
-  _destroyAtEnd: 0
---- !u!70 &2121139223243961141
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 535764266202915133}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.040899754, y: -0.020450413}
-  m_Size: {x: 0.5364685, y: 0.57736814}
-  m_Direction: 0
+  _speed: 5
+  _destroyAtEnd: 1
 --- !u!114 &3503288436893627975
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -147,12 +131,46 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48b504b22b9bb1c4a88d658dbdf3d565, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _health: 6
+  _health: 1
   _info: {fileID: 11400000, guid: 225b9d90ef0792746af567802bdbb7b2, type: 2}
   _isNotHuman: 1
   target: {fileID: 0}
-  _maxHealth: 6
---- !u!50 &779962756812579340
+  _maxHealth: 1
+--- !u!60 &6185695493423443407
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 535764266202915133}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.2298429, y: 0.39061356}
+      - {x: -0.40472817, y: -0.2545433}
+      - {x: -0.43648577, y: -0.25502872}
+      - {x: -0.30089974, y: -0.41531372}
+      - {x: -0.18952894, y: -0.47177124}
+      - {x: 0.38708544, y: 0.12601471}
+      - {x: 0.44001412, y: 0.19151402}
+      - {x: 0.3934412, y: 0.2819767}
+      - {x: 0.31501412, y: 0.39767075}
+--- !u!50 &5529382060067859824
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0

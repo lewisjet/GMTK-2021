@@ -15,6 +15,7 @@ public class UpgradePebble : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other) 
     {
+        if(!other.gameObject.GetComponent<PlayerController>()) { return; }
         var t = System.Type.GetType(upgradeType);
         var u = System.Activator.CreateInstance(t) as Upgrade;
         container.unlockedUpgrades.Add(u);

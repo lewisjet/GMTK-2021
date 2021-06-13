@@ -8,7 +8,7 @@ public class HealthComponent : MonoBehaviour
     [SerializeField] private float _health;
     [SerializeField] private InformationContainer _info;
     [SerializeField] private bool _isNotHuman;
-    [SerializeField] private GameObject target;
+    [SerializeField] private GameObject target, appearer;
 
     [Tooltip("Leave at 0 for no maximum")]
     [SerializeField] private float _maxHealth;
@@ -19,6 +19,7 @@ public class HealthComponent : MonoBehaviour
          _health = value;
          if(_health > _maxHealth && _maxHealth != 0) { _health = _maxHealth; }
          if(!_isNotHuman) _info.hp = _health;
+         if(_health <= 0 && appearer) { appearer.SetActive(true); }
          if(_health <= 0){ if(target){Destroy(target);}else{Destroy(gameObject);} }
 
      }}
