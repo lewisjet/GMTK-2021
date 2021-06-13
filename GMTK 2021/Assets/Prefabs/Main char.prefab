@@ -400,7 +400,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6408662606413672757, guid: 2d85bbf15d624054ab19924e0e054fba, type: 3}
       propertyPath: _dialogueRaw.Array.size
-      value: 7
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6408662606413672757, guid: 2d85bbf15d624054ab19924e0e054fba, type: 3}
       propertyPath: _dialogueRaw.Array.data[3].id
@@ -419,6 +419,18 @@ PrefabInstance:
       value: controls
       objectReference: {fileID: 0}
     - target: {fileID: 6408662606413672757, guid: 2d85bbf15d624054ab19924e0e054fba, type: 3}
+      propertyPath: _dialogueRaw.Array.data[7].id
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6408662606413672757, guid: 2d85bbf15d624054ab19924e0e054fba, type: 3}
+      propertyPath: _dialogueRaw.Array.data[8].id
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6408662606413672757, guid: 2d85bbf15d624054ab19924e0e054fba, type: 3}
+      propertyPath: _dialogueRaw.Array.data[9].id
+      value: and
+      objectReference: {fileID: 0}
+    - target: {fileID: 6408662606413672757, guid: 2d85bbf15d624054ab19924e0e054fba, type: 3}
       propertyPath: _dialogueRaw.Array.data[3].lineOfText
       value: 'High Jump Boots: jump to use'
       objectReference: {fileID: 0}
@@ -434,6 +446,18 @@ PrefabInstance:
     - target: {fileID: 6408662606413672757, guid: 2d85bbf15d624054ab19924e0e054fba, type: 3}
       propertyPath: _dialogueRaw.Array.data[6].lineOfText
       value: A and D to move, W or Space to jump.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6408662606413672757, guid: 2d85bbf15d624054ab19924e0e054fba, type: 3}
+      propertyPath: _dialogueRaw.Array.data[7].lineOfText
+      value: 1...
+      objectReference: {fileID: 0}
+    - target: {fileID: 6408662606413672757, guid: 2d85bbf15d624054ab19924e0e054fba, type: 3}
+      propertyPath: _dialogueRaw.Array.data[8].lineOfText
+      value: 2...
+      objectReference: {fileID: 0}
+    - target: {fileID: 6408662606413672757, guid: 2d85bbf15d624054ab19924e0e054fba, type: 3}
+      propertyPath: _dialogueRaw.Array.data[9].lineOfText
+      value: and....
       objectReference: {fileID: 0}
     - target: {fileID: 7049365033317466113, guid: 2d85bbf15d624054ab19924e0e054fba, type: 3}
       propertyPath: m_SizeDelta.x

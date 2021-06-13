@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 073136eb1fef6e849ac4dfc8982aa983, type: 3}
   m_Name: Info
   m_EditorClassIdentifier: 
-  hp: 0
+  hp: 100
   jumpHeight: 10.5
+  startingGame: 0
+  endingGame: 0
   doorId: -1

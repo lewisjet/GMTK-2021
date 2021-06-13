@@ -29,7 +29,7 @@ public class UpgradePebble : MonoBehaviour
         )
         {
             container.endingGame = true;
-            Scenemanager.instance.GoToScene(8);
+            Scenemanager.instance.GoToScene(12);
         }
 
         Destroy(gameObject);

@@ -24,4 +24,6 @@ public class AnimController : MonoBehaviour
 
     public void DialogueOpen(string id) => FindObjectOfType<SpeechSystem>().OpenDialogue(id);
     public void DialogueClose() => FindObjectOfType<SpeechSystem>().CloseDialogue();
+    public void GameEnd() => Scenemanager.instance.GoToScene(7);
+    public void FreePlayer() => FindObjectOfType<PlayerController>().transform.parent = this.transform;
 }
