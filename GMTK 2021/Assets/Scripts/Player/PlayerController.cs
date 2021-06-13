@@ -14,10 +14,13 @@ public class PlayerController : MonoBehaviour
     public Animator Animator;
     [SerializeField] private SpriteRenderer _spriteRenderer;
     [SerializeField] public SpriteRenderer spriteRenderer;
+    [SerializeField] AudioClip walking;
+    AudioSource mainCam; 
     public InformationContainer container;
 
     private void Start()
     {
+        mainCam = Camera.main.gameObject.GetComponent<AudioSource>();
         RG2D = GetComponent<Rigidbody2D>();
     }
     private void Update()
@@ -30,11 +33,15 @@ public class PlayerController : MonoBehaviour
             RG2D.velocity = new Vector2(MovX * MoveSpeed, RG2D.velocity.y);
             _spriteRenderer.transform.localScale = MovX < Mathf.Epsilon ? new Vector3(-1f, 1, 1) : new Vector3(1f, 1, 1);
             spriteRenderer.transform.localScale = MovX < Mathf.Epsilon ? new Vector3(-1f, 1, 1) : new Vector3(1f, 1, 1);
+            var a = walking;
+            if(!mainCam.isPlaying)
+            {mainCam.Play();}
             Animator.Play("PlayerWalk");
         }
         else if (MovX == 0)
         {
             RG2D.velocity = new Vector2(RG2D.velocity.x / 2, RG2D.velocity.y);
+            mainCam.Stop();
             Animator.Play("Idle");
         }
 

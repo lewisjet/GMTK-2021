@@ -294,6 +294,7 @@ MonoBehaviour:
   Animator: {fileID: 326109401114458447}
   _spriteRenderer: {fileID: 4303445628267981073}
   spriteRenderer: {fileID: 4303445628267981073}
+  walking: {fileID: 8300000, guid: d39e40cc04958884d91e5dbefbe5e3b6, type: 3}
   container: {fileID: 11400000, guid: 225b9d90ef0792746af567802bdbb7b2, type: 2}
 --- !u!114 &6914618446375736019
 MonoBehaviour:

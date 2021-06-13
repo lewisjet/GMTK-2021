@@ -15,6 +15,7 @@ public class MainMenu : MonoBehaviour
     void Start()
     {
         SelectedButton = 0;
+        if(FindObjectOfType<Clearer>()){ Destroy(FindObjectOfType<Clearer>().gameObject); }
     }
 
     // Update is called once per frame
@@ -27,7 +28,7 @@ public class MainMenu : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.KeypadEnter))
         {
-            if (SelectedButton == 0) SceneManager.LoadScene(1);
+            if (SelectedButton == 0) SceneManager.LoadScene(8);
             else if (SelectedButton == 1) SceneManager.LoadScene(7);
             else if (SelectedButton == 2) Application.Quit();
         }
